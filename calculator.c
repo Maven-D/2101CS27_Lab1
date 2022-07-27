@@ -17,6 +17,14 @@ float division(float a, float b) {
   return a/b;
 }
 
+float power(float a, int b) {
+    float ans = 1;
+    while (b-- > 0) {
+        ans *= a;
+    }
+    return ans;
+}
+
 
 int main() {
   label: printf("Enter the operation choice and the numbers:\n");
@@ -24,6 +32,8 @@ int main() {
   printf("2. Subtraction\n");
   printf("3. Multiplication\n");
   printf("4. Division\n");
+
+  // getting user input for operation
   int choice;
   scanf("%d", &choice);
   float num1, num2;

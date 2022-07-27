@@ -19,7 +19,7 @@ float division(float a, float b) {
 
 
 int main() {
-  printf("Enter the operation choice and the numbers:\n");
+  label: printf("Enter the operation choice and the numbers:\n");
   printf("1. Addition\n");
   printf("2. Subtraction\n");
   printf("3. Multiplication\n");
@@ -28,6 +28,25 @@ int main() {
   scanf("%d", &choice);
   float num1, num2;
   scanf("%f %f\n", &num1, &num2);
-  printf("The answer is: %f\n", )
+  float ans;
+
+  switch (choice) {
+    case 1:
+      ans = addition(num1, num2);
+      break;
+    case 2:
+      ans = subtraction(num1, num2);
+      break;
+    case 3:
+      ans = multiplication(num1, num2);
+      break;
+    case 4:
+      ans = division(num1, num2);
+      break;
+    default:
+      printf("Please enter a valid choice\n");
+      goto label;
+  }
+  printf("The answer is: %f\n", ans);
   return 0;
 }

@@ -32,6 +32,7 @@ int main() {
   printf("2. Subtraction\n");
   printf("3. Multiplication\n");
   printf("4. Division\n");
+  printf("5. Power\n", );
 
   // getting user input for operation
   int choice;
@@ -52,6 +53,9 @@ int main() {
       break;
     case 4:
       ans = division(num1, num2);
+      break;
+    case 5:
+      ans = power(num1, num2);
       break;
     default:
       printf("Please enter a valid choice\n");

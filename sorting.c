@@ -147,6 +147,13 @@ void quickSort(int arr[], int low, int high)
 }
 
 int main() {
-
+  int arr[] = {21, 112, 83, 49, 51, 36, 72, 18, 24};
+  /*
+      insertionSort(arr);
+      selectionSort(arr);
+      bubbleSort(arr);
+      mergeSort(arr, 0, length(arr));
+      quickSort(arr, 0, length(arr));
+  */
   return 0;
 }
